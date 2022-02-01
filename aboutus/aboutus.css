@@ -1,0 +1,55 @@
+body{
+    background-image: url("../../images/fondo.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    }
+h1,h3,a,nav {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    }
+    h3{
+        margin: 50px;
+    }
+    a{
+        font-weight: 100;
+        transition: 1s ease;
+}
+a:hover{
+    color: lightskyblue;
+    }
+    ul{
+        display: inline-block;
+        margin: auto;
+        border: dashed 4px black;
+        padding: 10px;
+        border-right: dashed 4px white;
+        border-left: dashed 4px white;
+    }
+    li{
+        display: inline-block;
+        margin-left: 25px;
+    }
+    nav>ul>li:first-child {
+        margin-left: 0;
+    }
+    dt>strong{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 120%;
+        color:white;
+    }
+    dl {
+        text-align: center;
+    }
+    dd{
+        display: inline-block;
+        margin: 30px;
+        color: white;
+        padding: 10px;
+        max-width: 50vw;
+        border: dotted 5px black;
+        
+    }
