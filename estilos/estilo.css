@@ -81,11 +81,22 @@ body{
     margin-top: 150px;
 }
 
+/*CAROUSEL*/
+
 
 .image{
     height: auto;
     width: 30%;
     border: dashed whitesmoke 2px;
+}
+
+/*FOOTER*/
+
+.footer{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
 }
   
   /*ul {
@@ -105,4 +116,4 @@ body{
     object-fit: cover;
     vertical-align: bottom;
     border: solid 3px black;
-  }*/
+/*
