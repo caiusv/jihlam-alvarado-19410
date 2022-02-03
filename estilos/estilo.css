@@ -1,0 +1,108 @@
+body{
+    background: radial-gradient(circle, rgba(15,32,39,1) 0%, rgba(32,58,67,1) 30%, rgba(0,0,0,1) 90%);
+    background-color: black;
+    background-size: 1920px 1080px;
+    text-align: center;
+    }
+
+    /*ANIMACION TOP TEXT*/
+
+.animated{
+    font-family: 'Six Caps', sans-serif;
+    font-weight: lighter;
+    font-size: 120px;
+    color: white;
+}
+
+.fadein{
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/*ANIMATION BUTTONS*/
+
+ .container>div{
+    transition: 0.3s ease-in-out;
+}
+.container>div>a{
+    transition: 1s ease;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.container>div>a:hover{
+    color: lightskyblue;
+    
+}
+.container>div>a:hover{
+    transform: scale(1.2);
+}
+
+
+.centrico{
+    display: inline-block;
+}
+.container{
+    width: 800px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(1, 20px);
+    
+}
+
+.gbox{
+    border-right: dashed 2px white;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.gbox:last-child{
+    border-right: none;
+}
+
+/*SPAM*/
+
+.spam{
+    font-family: 'Markazi Text', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    margin-top: 150px;
+}
+
+
+.image{
+    height: auto;
+    width: 30%;
+    border: dashed whitesmoke 2px;
+}
+  
+  /*ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  li{
+      height: 40vh;
+      flex-grow: 1;
+      list-style: none;
+  }
+
+    img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border: solid 3px black;
+  }*/
