@@ -98,6 +98,19 @@ body{
     font-weight: lighter;
     font-size: 18px;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 425px) {
+    .container{
+        width: 300px;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+    }
+    .gbox{
+        border: 0px;
+    }
+}
   
   /*ul {
       width: 100%;

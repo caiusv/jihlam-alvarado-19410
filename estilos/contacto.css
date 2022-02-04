@@ -71,18 +71,13 @@ body{
     border-right: none;
 }
 
-/*FORMS*/
+/*CONTACT FORM*/
 
-.center{
-    display: inline-block;
-}
-
-.spam{
-    font-family: 'Roboto Condensed', sans-serif;
+.formtext{
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    font-weight: lighter;
-    font-size: 18px;
 }
+
 
 /* FOOTER*/
 

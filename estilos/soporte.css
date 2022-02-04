@@ -71,17 +71,19 @@ body{
     border-right: none;
 }
 
-/*FORMS*/
 
-.center{
-    display: inline-block;
+/*fAQ*/
+.faq{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 50px;
 }
 
-.spam{
-    font-family: 'Roboto Condensed', sans-serif;
+.questions{
+    font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 24px;
     font-weight: lighter;
-    font-size: 18px;
 }
 
 /* FOOTER*/
@@ -105,7 +107,9 @@ h5{
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(5, auto);
     }
+
     .gbox{
         border: 0px;
     }
+
 }

@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/login.css" />
+    <link rel="stylesheet" href="../estilos/contacto.css" />
     <title>Desafio Bootstrap</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Montserrat&family=Roboto+Condensed:wght@300&family=Six+Caps&display=swap"
         rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 </head>
 
 <body>
@@ -41,47 +41,62 @@
             <div class="gbox"> <a href="../index.html">Ir al inicio</a></div>
             <div class="gbox"> <a href="../login/login.html">Log in</a></div>
             <div class="gbox"> <a href="../aboutus/aboutus.html">Acerca de Nosotros</a></div>
-            <div class="gbox"> <a href="../contacto/contacto.html">Contáctanos</a></div>
+            <div class="gbox"> <a href="./contacto.html">Contáctanos</a></div>
             <div class="gbox"> <a href="../soporte/soporte.html">Soporte y Ayuda</a></div>
         </div>
     </div>
 
-    <!-- LOGIN FORM -->
+    <!-- CONTACT FORM -->
 
-    <form>
-        <div class="spam">
-            <div class="center mt-5">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted mt-3">*We'll never share your email with anyone
-                        else.*</small>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                    <input class="mt-3 mb-3 mr-2" type="checkbox" onclick="myFunction()">Show Password
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="stay">
-                        <label class="stay" class="mr-2" for="stay">Stay Logged In</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="formbox py-5 d-flex justify-content-center">
+
+
+        <form id="contactForm">
+
+
+            <div class="mb-3">
+                <div class="formtext">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input class="form-control" id="name" type="text" placeholder="First and Last Name" />
                 </div>
             </div>
-        </div>
-    </form>
+
+
+            <div class="mb-3">
+                <div class="formtext">
+                    <label class="form-label" for="emailAddress">Email Address</label>
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <div class="formtext">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Message"
+                        style="height: 10rem;"></textarea>
+                    <div class="formtext">
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg mt-5" type="submit">Submit</button>
+                    </div>
+
+        </form>
+
+    </div>
+
 
     <!-- FOOTER -->
 
     <footer class="footer mt-4">
         <div class="row">
             <div class="col">
-                <p class="text-center mt-5 w-100"> Desafio Bootstrap - <a href="https://www.linkedin.com/in/jihlam-alvarado-1b7b7098/"> Jihlam Alvarado</a></p>
+                <p class="mt-5 w-100 "> Desafio Bootstrap - <a
+                        href="https://www.linkedin.com/in/jihlam-alvarado-1b7b7098/"> Jihlam Alvarado</a></p>
             </div>
         </div>
     </footer>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -93,17 +108,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
-    </script>
 
 </body>
 
