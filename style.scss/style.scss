@@ -1,0 +1,114 @@
+$fontcolor: rgb(255, 255, 255);
+@mixin container-default{
+    display: inline-block;
+}
+
+body{
+    background: radial-gradient(circle, rgba(15,32,39,1) 0%, rgba(32,58,67,1) 30%, rgba(0,0,0,1) 90%);
+    background-color: black;
+    background-size: 1920px 1080px;
+    text-align: center;
+    }
+
+    /*ANIMACION TOP TEXT*/
+
+.animated{
+    font-family: 'Six Caps', sans-serif;
+    font-weight: lighter;
+    font-size: 120px;
+    color: $fontcolor;
+}
+
+.fadein{
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/*ANIMATION BUTTONS*/
+
+.container>div{
+    transition: 0.3s ease-in-out;
+}
+.container>div>a{
+    transition: 1s ease;
+    color: $fontcolor;
+    text-decoration: none;
+    @include container-default;
+}
+.container>div>a:hover{
+    color: lightskyblue;
+    transform: scale(1.2);   
+}
+
+
+
+.centrico{
+    @include container-default;
+     .container{
+        width: 800px;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, 20px);
+        .gbox{
+            border-right: dashed 2px white;
+            color: $fontcolor;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            }
+        .gbox:last-child{
+            border-right: none;
+        }
+    }
+}
+
+
+
+/*SPAM*/
+
+.spam{
+    font-family: 'Markazi Text', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: $fontcolor;
+    margin-top: 150px;
+}
+
+/*CAROUSEL*/
+
+
+.image{
+    height: auto;
+    width: 30%;
+    border: dashed whitesmoke 2px;
+}
+
+/*FOOTER*/
+
+.footer{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $fontcolor;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 425px) {
+    .container{
+        width: 300px;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+    }
+    .gbox{
+        border: 0px;
+    }
+}

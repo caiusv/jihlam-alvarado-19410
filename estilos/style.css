@@ -1,0 +1,127 @@
+body {
+  background: radial-gradient(circle, #0f2027 0%, #203a43 30%, black 90%);
+  background-color: black;
+  background-size: 1920px 1080px;
+  text-align: center;
+}
+
+/*ANIMACION TOP TEXT*/
+.animated {
+  font-family: 'Six Caps', sans-serif;
+  font-weight: lighter;
+  font-size: 120px;
+  color: white;
+}
+
+.fadein {
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*ANIMATION BUTTONS*/
+.container > div {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container > div > a {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container > div > a:hover {
+  color: lightskyblue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.centrico {
+  display: inline-block;
+}
+
+.centrico .container {
+  width: 800px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  -ms-grid-rows: (20px)[1];
+      grid-template-rows: repeat(1, 20px);
+}
+
+.centrico .container .gbox {
+  border-right: dashed 2px white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.centrico .container .gbox:last-child {
+  border-right: none;
+}
+
+/*SPAM*/
+.spam {
+  font-family: 'Markazi Text', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  margin-top: 150px;
+}
+
+/*CAROUSEL*/
+.image {
+  height: auto;
+  width: 30%;
+  border: dashed whitesmoke 2px;
+}
+
+/*FOOTER*/
+.footer {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 425px) {
+  .container {
+    width: 300px;
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+  }
+  .gbox {
+    border: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
